@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-area a {
+  /* border: 0.1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-area a:hover {
+  background: #565656;
+  color: #fff;
+}
+.menu-area ul {
+  list-style: none;
+  display: flex;
+  z-index: 10;
+}
+
+.menu-area ul li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-area li:hover .menu-area > li {
+  display: block;
+  top: 0;
+}
+
+.menu-one li {
+  display: none;
+  position: relative;
+}
+
+.menu-one {
+  position: absolute;
+  display: flex;
+}
