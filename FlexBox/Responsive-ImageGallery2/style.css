@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
+
+.wrapper {
+  text-align: center;
+  font-size: 30px;
+  font-family: Audiowide;
+  /* border: 1px solid blue; */
+}
+
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+
+.single-img {
+  padding: 0 20px 20px;
+}
+
+.single-img:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}

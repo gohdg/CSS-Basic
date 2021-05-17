@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.home:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.welcome-text {
+  /* border: 1px solid yellow; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 자신의 width / height 절반 크기로 이동 */
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: Audiowide;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper {
+  /* border: 1px solid yellow; */
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-area {
+  display: flex;
+  background: #d82f4b;
+  color: #fff;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.nav-area > ul {
+  /* border: 1px solid blue; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 3;
+  display: flex;
+}
+
+.nav-area li {
+  margin-right: 1em;
+  line-height: 30px;
+}
+
+.nav-area li a {
+  /* border: 1px solid white; */
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: poppins;
+  text-transform: uppercase;
+}
+
+.nav-area > form {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-area input {
+  flex: 1;
+  border-radius: 25px;
+  border: 0;
+  padding: 0px 5px;
+}
+
+.nav-area button {
+  background: #262626;
+  border: 0;
+  border-radius: 1em;
+  color: #fff;
+  padding: 8px 20px;
+  margin-left: 0.3em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+  }
+  .nav-area {
+    flex-direction: column;
+  }
+  .nav-area ul {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+  .nav-area {
+    flex-direction: column;
+  }
+
+  .nav-area ul {
+    margin-bottom: 1em;
+  }
+
+  .nav-area li {
+    /* border: 1px solid yellow; */
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .welcome-text {
+    font-size: 15px;
+  }
+}
