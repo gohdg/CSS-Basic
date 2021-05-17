@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -32,17 +33,53 @@
   text-align: center;
 }
 
-.menu-area li:hover .menu-area > li {
+/* hover 시 해당 클래스 display block */
+.menu-area li:hover .menu-one > li {
   display: block;
   top: 0;
 }
 
 .menu-one li {
   display: none;
-  position: relative;
+  /* position: relative; */
 }
 
 .menu-one {
   position: absolute;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menu-one li:hover .menu-two li {
+  display: block;
+}
+
+.menu-two li {
+  display: none;
+}
+.menu-two {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  width: 200px;
+}
+
+.banner-area {
+  background-image: url(3.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.banner-area h1 {
+  text-transform: uppercase;
+  color: #ff0;
+  font-size: 60px;
+  font-family: Audiowide;
 }
