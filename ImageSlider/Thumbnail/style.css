@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ebebeb;
+}
+
+.slider-box {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.main-slider {
+  position: relative;
+  width: 640px;
+  padding-top: 320px;
+  margin: 20px auto;
+  box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+}
+
+.main-slider > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 640px;
+  height: 330px;
+  transition: all 0.6s;
+}
+
+.main-slider input[name="ani"] {
+  display: none;
+}
+
+.main-slider label {
+  margin: 50px 0 0 20px;
+  border: 3px solid #888;
+  float: left;
+  cursor: pointer;
+  transition: all 0.6s;
+  opacity: 0.8;
+}
+
+.main-slider label img {
+  /* label안을 꽉 채운다 */
+  display: block;
+}
+
+.main-slider input[name="ani"]:checked + label {
+  border-color: #777;
+  opacity: 1;
+}
+
+.main-slider input[name="ani"] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.main-slider input[name="ani"]:checked + label + img {
+  opacity: 1;
+  transform: scale(1);
+}

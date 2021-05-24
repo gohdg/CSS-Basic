@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  background: #ddd;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.single-product {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s linear;
+}
+
+.single-product img {
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+.product-area {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  /* top: 60%;
+  left: 0; */
+  bottom: 50px;
+  right: 100%;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+a {
+  text-decoration: none;
+}
+.product-text {
+  font-family: audiowide;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin: 15px;
+}
+
+.single-product:hover .product-area {
+  right: 0;
+}
+
+.single-product:hover img {
+  transform: scale(1.2);
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: #262626;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper ul {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  display: flex;
+  /* border: 1px solid yellow; */
+  transition: 0.5s;
+}
+
+.wrapper ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+.wrapper ul li a {
+  display: block;
+  /* border: 1px solid yellow; */
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+  font-family: Audiowide;
+  color: #fafafa;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.wrapper ul:hover li a {
+  transform: scale(1);
+  opacity: 0.2;
+  filter: blur(1px);
+}
+.wrapper ul li a:hover {
+  /* color: white; */
+  opacity: 1;
+  transform: scale(1.5);
+  filter: blur(0);
+}
